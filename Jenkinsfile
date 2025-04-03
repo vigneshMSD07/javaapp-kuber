@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("pullscm") {
             steps {
-                git credentialsId: 'github', url: 'git@github.com:dockerhub/javaapp-kuber.git'
+                git credentialsId: 'github', url: 'git@github.com:Dockerhub/javaapp-kuber.git'
             }
         }
         stage("build") {
